@@ -61,7 +61,7 @@ Below is how a basic Telegram alarm configuration would appear in `alarms.json`.
 In addition to the required parameters, several `alarm.json` optional parameters are available to personalize your notifications.  Below is an example of these optional parameters and how they are incorporated into a functional alarm layout.
 
 
-These optional parameter are entered at the same level as `"type":"telegram"`.
+These optional parameters are entered at the same level as `"type":"telegram"`.
 
 **Android users** may experience issues when map notifications are enabled.  Try setting `disable_map_notifications` to `True` before opening a ticket.
 
