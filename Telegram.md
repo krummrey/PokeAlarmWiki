@@ -61,12 +61,15 @@ Below is how a basic Telegram alarm configuration would appear in `alarms.json`.
 In addition to the required parameters, several `alarm.json` optional parameters are available to personalize your notifications.  Below is an example of these optional parameters and how they are incorporated into a functional alarm layout.
 
 
-These optional parameters, `startup_message`, and `startup_list`, are entered at the same level as `"type":"telegram"`.
+These optional parameter are entered at the same level as `"type":"telegram"`.
 
-| Parameters         | Description                                                | Default                      |
-|:-------------------|:-----------------------------------------------------------|:-----------------------------|
-| `startup_message`  | Confirmation post when PokeAlarm initialized               | `True`                       |
-| `startup_list`     | First post will list all alarmed pokemon enabled in `alarms.json`    | `True`            |
+**Android users** may experience issues when map notifications are enabled.  Try setting `disable_map_notifications` to `True` before opening a ticket.
+
+| Parameters       				| Description                                                | Default                      |
+|:------------------------------|:-----------------------------------------------------------|:-----------------------------|
+| `disable_map_notification`	| Disables map notifications.  Set to `True` if you are experiencing notification issues on Android                | `True`                       |
+| `startup_message`  			| Confirmation post when PokeAlarm initialized               | `True`                       |
+| `startup_list`     			| First post will list all alarmed pokemon enabled in `alarms.json`    | `True`            |
 
 These optional parameters below are applicable to the `pokemon`, `pokestop`, and `gym` sections of the JSON file.
 
@@ -84,6 +87,7 @@ Below is how an advanced alarm configuration would appear in `alarms.json`. Note
 	"type":"telegram",
 	"bot_token":"YOUR_BOT_TOKEN",
 	"chat_id":"YOUR_CHAT_ID",
+	"disable_map_notification":"False",
 	"startup_message:":"True",
 	"startup_list:":"True",
 	"pokemon" : {
